@@ -68,6 +68,7 @@ Proceso ejercicio1
 			    Limpiar Pantalla;
 				Escribir "Escriba el numero de cedula: ";
 				Leer busqueda;
+				
 				para j<-0 hasta limite -1 con paso 1 hacer
 					si cedula[j] = busqueda Entonces
 						escribir "paciente encontrado";
@@ -80,7 +81,9 @@ Proceso ejercicio1
 					SiNo
 						Escribir "cedula no existe";
 					FinSi
-					
+					Escribir "ingrese una cedula valida";
+					leer busqueda;
+				
 				FinPara
 				
 				
