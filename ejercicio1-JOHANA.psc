@@ -69,14 +69,13 @@ Proceso ejercicio1
 				Escribir "Escriba el numero de cedula: ";
 				Leer busqueda;
 				para j<-0 hasta limite -1 con paso 1 hacer
-					Repetir
-						si cedula[j] = 0 Entonces
-							Escribir "Cedula no existe";
-						FinSi
-					Hasta Que cedula[j] <> 0
-					si cedula[j] == busqueda Entonces
+					si cedula[j] = busqueda Entonces
 						escribir "paciente encontrado";
-						escribir j+1, " cedula: ", cedula[j], "", " nombre: ", nombre[j], " ultima visita: ", fecha[j], " Seguridad social: ", privado[j], " alergias: ", alergia[j];
+						escribir " cedula: ",cedula[j];
+						escribir " nombre: ", nombre[j];
+						escribir " ultima visita: ", fecha[j];
+						escribir " Seguridad social: ", privado[j];
+						escribir " alergias: ", alergia[j];
 						j<-limite;
 					SiNo
 						Escribir "cedula no existe";
