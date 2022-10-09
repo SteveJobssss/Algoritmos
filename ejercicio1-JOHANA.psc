@@ -3,23 +3,23 @@ Proceso ejercicio1
 	
 	Escribir "HOLA PROFE ;" ;
 	
-    definir  busqueda Como Caracter;
-	
+    definir  busqueda Como entero;
 	Definir nombre, fecha Como Caracter;  //definimos xq registramos palabras
-	Definir cedula Como Caracter;//definimos xq registramos numeros enteros
+	Definir cedula Como entero;//definimos xq registramos numeros enteros
 	Definir limite, p, i, dt, entrada, registro, j, k, privado, alergia  Como Entero; 
 	Definir bandera, str Como Logico;
+	Escribir "Cuantos datos desea ingresar ?";
+	leer limite;
 	
-	limite=10;
-	entrada=0;
-	p=0;
+	entrada<-0;
+	p<-0;
 	bandera=Falso;
-	i=0;
-    dt=0;
-    registro=0;
-	j=0;
-	registro=0;	
-	k=0;
+	i<-0;
+    dt<-0;
+    registro<-0;
+	j<-0;
+	registro<-0;	
+	k<-0;
 	
 	//creamos los vectores
 	Dimension nombre[limite];
@@ -68,11 +68,18 @@ Proceso ejercicio1
 			    Limpiar Pantalla;
 				Escribir "Escriba el numero de cedula: ";
 				Leer busqueda;
-				para j=0 hasta limite -1 con paso 1 hacer
-					si cedula[j]=busqueda Entonces
+				para j<-0 hasta limite -1 con paso 1 hacer
+					Repetir
+						si cedula[j] = 0 Entonces
+							Escribir "Cedula no existe";
+						FinSi
+					Hasta Que cedula[j] <> 0
+					si cedula[j] == busqueda Entonces
 						escribir "paciente encontrado";
 						escribir j+1, " cedula: ", cedula[j], "", " nombre: ", nombre[j], " ultima visita: ", fecha[j], " Seguridad social: ", privado[j], " alergias: ", alergia[j];
 						j<-limite;
+					SiNo
+						Escribir "cedula no existe";
 					FinSi
 					
 				FinPara
@@ -82,7 +89,7 @@ Proceso ejercicio1
 				Limpiar Pantalla;
 				Escribir "Escriba el numero de cedula: ";
 				Leer busqueda;
-				para k=0  Hasta limite-1 con paso 1 Hacer
+				para k<-0  Hasta limite-1 con paso 1 Hacer
 					si cedula[k]=busqueda Entonces
 						escribir "su ultima visita: ";
 						escribir k+1, "cedula: ", "", cedula[k], "", "nombre: ", nombre[k], "", "ultima visita: ", fecha[k];
@@ -106,8 +113,8 @@ Proceso ejercicio1
 				escribir "Lista de todos pacientes: ";
 				i=0;
 				
-				para i=0 hasta limite-1 con paso 1 hacer 
-					si cedula[i]<>"0" Entonces
+				para i<-0 hasta limite-1 con paso 1 hacer 
+					si cedula[i] <> 0 Entonces
 						Escribir  "ID. ",  I+1, " cedula: ", cedula[i], "", " nombre: ", nombre[i], " ultima visita: ", fecha[i], " Seguridad social: ", privado[i], " alergias: ", alergia[i];
 					FinSi
 				FinPara
