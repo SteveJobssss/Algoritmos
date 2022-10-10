@@ -43,5 +43,8 @@ Proceso Ejercicio3
 	vocalesCar(3)="o";
 	vocalesCar(4)="u";
 	
+	
+	//leemos las letras en la palabra y comparamos
+	
 
 FinProceso
