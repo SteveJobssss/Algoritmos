@@ -2,7 +2,7 @@ Proceso Ejercicio3
 	
 	//Objetivo: Elaborar un prohrama en pseint que pida una palabra digitada y:
 	//convierta las mayusculas a minusculas y viceversa
-	//determinar si tiene mas vocales que consonantes o no, el programa debe retornar verdadero si cumple la conddicion, caso contrario falso.
+	//determinar si tiene mas vocales que consonantes o no, el programa debe retornar verdadero si cumple la condicion, caso contrario falso.
 	//que invierta todos los caracteres de una hilera EJ: amor - Roma
 	//determinar si tiene las 5 vocales o no, debe retornar verdadero si es asi, falso si no
 	
@@ -12,6 +12,14 @@ Proceso Ejercicio3
 	Definir resultadoCons, resultadoVoc como Logico;
 	Definir respuestaCaps como	 entero;
 	Definir i Como Entero;
+	
+	//Establecemos las vocales
+	Dimension vocalesCar(5);
+	vocalesCar(0)="a";
+	vocalesCar(1)="e";
+	vocalesCar(2)="i";
+	vocalesCar(3)="o";
+	vocalesCar(4)="u";
 	
 	
 	//pedimos palabra
@@ -35,16 +43,33 @@ Proceso Ejercicio3
 		Escribir "Porfavor Ingrese una opcion correcta";
 	FinSi
 	
-	//Establecemos las vocales
-	Dimension vocalesCar(5);
-	vocalesCar(0)="a";
-	vocalesCar(1)="e";
-	vocalesCar(2)="i";
-	vocalesCar(3)="o";
-	vocalesCar(4)="u";
+	
+	
+	//Invertimos los caracteres
+	
+	//-----------------------------------------
+	
+	//PENDIENTE
+	
+	//-----------------------------------------
+
+	
+	//determinamos si tiene mas vocales que consonantes
+	
+	//-----------------------------------------
+	
+	//PENDIENTE
+	
+	//-----------------------------------------
+	
 	
 	
 	//leemos las letras en la palabra y comparamos
 	
+	//-----------------------------------------
+	
+	//PENDIENTE
+	
+	//-----------------------------------------
 
 FinProceso
