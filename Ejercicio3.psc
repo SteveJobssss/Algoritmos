@@ -8,9 +8,11 @@ Proceso Ejercicio3
 	
 	
 	//declaramos variables
-	Definir palabraIng, palabraCaps, palabraInv Como Caracter;
+	Definir palabraIng, palabraCaps, palabraInv, vocalesCar Como Caracter;
 	Definir resultadoCons, resultadoVoc como Logico;
-	Definir respuestaCaps como	 entero; 
+	Definir respuestaCaps como	 entero;
+	Definir i Como Entero;
+	
 	
 	//pedimos palabra
 	Escribir("Buen Dia, digite la palabra deseada");
@@ -33,6 +35,13 @@ Proceso Ejercicio3
 		Escribir "Porfavor Ingrese una opcion correcta";
 	FinSi
 	
+	//Establecemos las vocales
+	Dimension vocalesCar(5);
+	vocalesCar(0)="a";
+	vocalesCar(1)="e";
+	vocalesCar(2)="i";
+	vocalesCar(3)="o";
+	vocalesCar(4)="u";
 	
 
 FinProceso
