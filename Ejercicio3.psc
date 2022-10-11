@@ -51,12 +51,12 @@ Proceso Ejercicio3
 	longPalabra=Longitud(palabraIng);
 	longCuenta=1;
 	sumaCuenta=0;
-	Mientras longCuenta <= longPalabra Hacer
+	Mientras longCuenta < longPalabra Hacer
 		Segun Subcadena(palabraIng, longCuenta, longCuenta) Hacer
-			'a' o 'A':
+			'A' O 'a':
 				sumaCuenta=sumaCuenta+1;
 		FinSegun
-		x=x+1;
+		longCuenta=longCuenta+1;
 	FinMientras
 	
 	//-----------------------------------------
