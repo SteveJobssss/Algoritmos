@@ -3,12 +3,12 @@ Proceso Ejercicio3
 	//Objetivo: Elaborar un prohrama en pseint que pida una palabra digitada y:
 	//------------------------------------
 	//------------------------------------
-	//que invierta todos los caracteres de una hilera EJ: amor - Roma
+	//------------------------------------
 	//determinar si tiene las 5 vocales o no, debe retornar verdadero si es asi, falso si no
 	
 	
 	//declaramos variables
-	Definir palabraIng, palabraCaps, palabraInv, vocalesCar Como Caracter;
+	Definir palabraIng, palabraInv, vocalesCar Como Caracter;
 	Definir resultadoCons, resultadoVoc como Logico;
 	Definir respuestaCaps, longPalabra, longCuenta, vocales, consonante como entero;
 	Definir i Como Entero;
@@ -87,12 +87,14 @@ Proceso Ejercicio3
 	
 	
 	//Invertimos los caracteres
+	longCuenta=1;
+	palabraInv="";
+	Mientras longPalabra > 0 Hacer
+		palabraInv=palabraInv+Subcadena(palabraIng,longPalabra,longPalabra)
+		longPalabra=longPalabra-1;
+	FinMientras
 	
-	//-----------------------------------------
-	
-	//PENDIENTE
-	
-	//-----------------------------------------
+	Escribir palabraInv;
 	
 	
 	//leemos las letras en la palabra y comparamos
