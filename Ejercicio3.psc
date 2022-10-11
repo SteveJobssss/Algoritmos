@@ -74,9 +74,7 @@ Proceso Ejercicio3
 		longCuenta=longCuenta+1;
 	FinMientras
 	
-	Escribir vocales;
-	Escribir consonante;
-	
+
 	si vocales > consonante Entonces
 		resultadoVoc = Verdadero;
 		Escribir("si la palabra tiene mas vocales que consonantes dara Verdadero, caso contrario marcara Falso");
@@ -86,9 +84,6 @@ Proceso Ejercicio3
 		Escribir("si la palabra tiene mas vocales que consonantes dara Verdadero, caso contrario marcara Falso");
 		Escribir ("El resultado es: "), resultadoVoc;
 	FinSi
-
-	
-	//-----------------------------------------
 	
 	
 	//Invertimos los caracteres
