@@ -6,25 +6,24 @@ Proceso Ejercicio3
 	//que invierta todos los caracteres de una hilera EJ: amor - Roma
 	//determinar si tiene las 5 vocales o no, debe retornar verdadero si es asi, falso si no
 	
+	
 	//declaramos variables
 	Definir palabraIng, palabraCaps, palabraInv, vocalesCar Como Caracter;
 	Definir resultadoCons, resultadoVoc como Logico;
 	Definir respuestaCaps, longPalabra, longCuenta, vocales, consonante como entero;
 	Definir i Como Entero;
 	
-	
 	longCuenta=1;
 	vocales=0;
 	consonante=0;
 	
-	
 	//Establecemos las vocales
-	Dimension vocalesCar(5);
-	vocalesCar(1)="a";
-	vocalesCar(2)="e";
-	vocalesCar(3)="i";
-	vocalesCar(4)="o";
-	vocalesCar(5)="u";
+	//Dimension vocalesCar(5);
+	//vocalesCar(1)="a";
+	//vocalesCar(2)="e";
+	//vocalesCar(3)="i";
+	//vocalesCar(4)="o";
+	//vocalesCar(5)="u";
 	
 	
 	//pedimos palabra
@@ -50,9 +49,9 @@ Proceso Ejercicio3
 		Escribir "Porfavor Ingrese una opcion correcta";
 	FinSi
 	
+	
 	Escribir(" ")
 	
-
 	
 	//determinamos si tiene mas vocales que consonantes
 	longPalabra=Longitud(palabraIng);
@@ -74,7 +73,8 @@ Proceso Ejercicio3
 		longCuenta=longCuenta+1;
 	FinMientras
 	
-
+	
+	//Escribimos el resultado, en caso de haber mas vocales que consonantes este sera Verdadero, caso contrario, sera falso.
 	si vocales > consonante Entonces
 		resultadoVoc = Verdadero;
 		Escribir("si la palabra tiene mas vocales que consonantes dara Verdadero, caso contrario marcara Falso");
