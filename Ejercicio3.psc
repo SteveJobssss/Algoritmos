@@ -14,7 +14,7 @@ Proceso Ejercicio3
 	
 	
 	longCuenta=1;
-	sumaCuenta=0;
+	vocales=0;
 	consonante=0;
 	
 	
@@ -56,7 +56,7 @@ Proceso Ejercicio3
 	
 	//determinamos si tiene mas vocales que consonantes
 	longPalabra=Longitud(palabraIng);
-	Mientras vocales < longPalabra Hacer
+	Mientras longCuenta <= longPalabra Hacer
 		Segun Subcadena(palabraIng, longCuenta, longCuenta) Hacer
 			'A' O 'a':
 				vocales=vocales+1;
@@ -68,15 +68,16 @@ Proceso Ejercicio3
 				vocales=vocales+1;
 			"U" o "u":
 				vocales=vocales+1;	
-				
 			De Otro Modo:
 				consonante = consonante + 1;
 		FinSegun
-		vocales=vocales+1;
+		longCuenta=longCuenta+1;
 	FinMientras
 	
+	Escribir vocales;
+	Escribir consonante;
 	
-	si vocales < consonante Entonces
+	si vocales > consonante Entonces
 		resultadoVoc = Verdadero;
 		Escribir("si la palabra tiene mas vocales que consonantes dara Verdadero, caso contrario marcara Falso");
 		Escribir ("El resultado es: "), resultadoVoc;
@@ -85,6 +86,9 @@ Proceso Ejercicio3
 		Escribir("si la palabra tiene mas vocales que consonantes dara Verdadero, caso contrario marcara Falso");
 		Escribir ("El resultado es: "), resultadoVoc;
 	FinSi
+
+	
+	//-----------------------------------------
 	
 	
 	//Invertimos los caracteres
