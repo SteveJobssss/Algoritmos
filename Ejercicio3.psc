@@ -1,11 +1,8 @@
 Proceso Ejercicio3
 	
 	//Objetivo: Elaborar un prohrama en pseint que pida una palabra digitada y:
-	//------------------------------------
-	//------------------------------------
-	//------------------------------------
-	//determinar si tiene las 5 vocales o no, debe retornar verdadero si es asi, falso si no
 	
+	//determinar si tiene las 5 vocales o no, debe retornar verdadero si es asi, falso si no
 	
 	//declaramos variables
 	Definir palabraIng, palabraInv, vocalesCar Como Caracter;
@@ -25,11 +22,9 @@ Proceso Ejercicio3
 	//vocalesCar(4)="o";
 	//vocalesCar(5)="u";
 	
-	
 	//pedimos palabra
 	Escribir("Buen Dia, digite la palabra deseada");
 	Leer palabraIng;
-	
 	
 	//Preguntamos si deseamos pasarlas a mayus o minus
 	Escribir("Convertir a: ");
@@ -37,9 +32,8 @@ Proceso Ejercicio3
 	Escribir("2 = Minusculas");
 	Leer respuestaCaps;
 	
-	
 	//Operacion para intercambio
-	si respuestaCaps >0 y respuestaCaps <3 Entonces
+	si respuestaCaps > 0 y respuestaCaps < 3 Entonces
 		si respuestaCaps == 1 Entonces
 			Escribir "El texto en Caps es: ",Mayusculas(palabraIng);
 		SiNo
@@ -48,7 +42,6 @@ Proceso Ejercicio3
 	SiNo
 		Escribir "Porfavor Ingrese una opcion correcta";
 	FinSi
-	
 	
 	Escribir(" ")
 	
@@ -73,7 +66,6 @@ Proceso Ejercicio3
 		longCuenta=longCuenta+1;
 	FinMientras
 	
-	
 	//Escribimos el resultado, en caso de haber mas vocales que consonantes este sera Verdadero, caso contrario, sera falso.
 	si vocales > consonante Entonces
 		resultadoVoc = Verdadero;
@@ -85,6 +77,8 @@ Proceso Ejercicio3
 		Escribir ("El resultado es: "), resultadoVoc;
 	FinSi
 	
+	Escribir " ";
+	
 	
 	//Invertimos los caracteres
 	longCuenta=1;
@@ -94,7 +88,8 @@ Proceso Ejercicio3
 		longPalabra=longPalabra-1;
 	FinMientras
 	
-	Escribir palabraInv;
+	Escribir"La palabra: ",palabraIng," con sus carecteres invertidos se escribiria: ",palabraInv;
+	Escribir " ";
 	
 	
 	//leemos las letras en la palabra y comparamos
